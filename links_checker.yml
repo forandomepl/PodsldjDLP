@@ -23,8 +23,6 @@ jobs:
         uses: lycheeverse/lychee-action@v1.4.1
         with:
           output: ${{ env.REPORT_FILE }}
-          format: markdown
-          ## Do not fail this step on broken links
           fail: false
           ## Allow pages replying with 200 (Ok), 204 (No Content),
           ## 206 (Partial Content) in at most 20 seconds with HTML content.
